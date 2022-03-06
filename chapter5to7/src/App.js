@@ -29,6 +29,7 @@ function App() {
                   <li key={g}>{g}</li>
                 ))}
               </ul>
+              <hr />
             </div>
           ))}
         </div>
