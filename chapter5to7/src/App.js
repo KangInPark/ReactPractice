@@ -2,48 +2,37 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [coins, setCoins] = useState([]);
-  const [select, setSelect] = useState([]);
-  const [money, setMoney] = useState(0);
-  const [selected, setSelected] = useState(false);
-  const onChange = (e) => {
-    setSelect(e.target.value.split(" "));
-    select[0] === "Select" ? setSelected(false) : setSelected(true);
+  const [movies, setMovies] = useState([]);
+  const getMovies = async () => {
+    const json = await (
+      await fetch(
+        "https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=year"
+      )
+    ).json();
+    setMovies(json.data.movies);
+    setLoading(false);
   };
-  const moneyChange = (e) => setMoney(e.target.value);
-  useEffect(() => {
-    fetch("https://api.coinpaprika.com/v1/tickers")
-      .then((response) => response.json())
-      .then((json) => {
-        setCoins(json);
-        setLoading(false);
-      });
-  }, []);
+  useEffect(() => getMovies(), []);
   return (
     <div>
-      <h1>The Coins! {loading ? "" : `(${coins.length})`}</h1>
       {loading ? (
-        <strong>Loading...</strong>
+        <h1>Loading...</h1>
       ) : (
-        <select onChange={onChange}>
-          <option>Select Coin!</option>
-          {coins.map((coin) => (
-            <option key={coin.id}>
-              {coin.name} ({coin.symbol}): {coin.quotes.USD.price} USD
-            </option>
+        <div>
+          {movies.map((movie) => (
+            <div key={movie.id}>
+              <img src={movie.medium_cover_image} />
+              <h2>{movie.title}</h2>
+              <p>{movie.summary}</p>
+              <ul>
+                {movie.genres.map((g) => (
+                  <li key={g}>{g}</li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </select>
+        </div>
       )}
-      <hr />
-      <label htmlFor="money">Your Money: </label>
-      <input
-        id="money"
-        placeholder="$"
-        value={money}
-        onChange={moneyChange}
-      ></input>
-      <br />
-      {selected ? `You can get ${money / select[2]} ${select[0]}!` : ""}
     </div>
   );
 }
