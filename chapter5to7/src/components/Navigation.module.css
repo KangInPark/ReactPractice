@@ -1,0 +1,22 @@
+.span {
+    display: table-cell;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 15px 30px;
+}
+.span:hover{
+    background-color: gold;
+}
+.container {
+    display: table;
+    height: 3em;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+.link:visited, .link{
+    color:teal;
+    text-decoration: none;
+}
+.link:hover {
+    color:teal;
+    text-decoration: none;
+}
