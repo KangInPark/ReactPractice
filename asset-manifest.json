@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactPractice/chapter5to7/static/css/main.1fdce6f5.css",
+    "main.js": "/ReactPractice/chapter5to7/static/js/main.b8a7c081.js",
+    "index.html": "/ReactPractice/chapter5to7/index.html",
+    "main.1fdce6f5.css.map": "/ReactPractice/chapter5to7/static/css/main.1fdce6f5.css.map",
+    "main.b8a7c081.js.map": "/ReactPractice/chapter5to7/static/js/main.b8a7c081.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fdce6f5.css",
+    "static/js/main.b8a7c081.js"
+  ]
+}
