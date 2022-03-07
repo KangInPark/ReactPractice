@@ -1,0 +1,21 @@
+.attr, .div {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    background-color:dimgray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
