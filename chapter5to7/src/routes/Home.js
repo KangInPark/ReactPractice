@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Movie from "../components/Movie";
+import styles from "./Home.module.css";
+import Topbtn from "../components/Topbtn";
 
 function Home() {
 	const [loading, setLoading] = useState(true);
@@ -19,7 +21,7 @@ function Home() {
 			{loading ? (
 				<h1>Loading...</h1>
 			) : (
-				<div>
+				<div className={styles.container}>
 					{movies.map((movie) => (
 						<Movie
 							key={movie.id}
@@ -32,6 +34,7 @@ function Home() {
 					))}
 				</div>
 			)}
+			<Topbtn />
 		</div>
 	);
 }

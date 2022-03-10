@@ -8,15 +8,11 @@
 }
 .container {
     display: table;
-    height: 3em;
+    height: 3rem;
     font-weight: bolder;
     margin: 5px 0;
 }
-.link:visited, .link{
-    color:teal;
-    text-decoration: none;
-}
-.link:hover {
+.link:visited, .link, .link:hover{
     color:teal;
     text-decoration: none;
 }
