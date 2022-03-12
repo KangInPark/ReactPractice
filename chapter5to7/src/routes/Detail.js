@@ -22,13 +22,7 @@ function Detail() {
 	) : (
 		<div>
 			<h1 className={styles.title}>{movie.title}</h1>
-			<img
-				src={movie.large_cover_image}
-				style={{
-					display: "block",
-					margin: "30px 5px",
-				}}
-			/>
+			<img src={movie.large_cover_image} />
 			<span className={styles.attr}>year: {movie.year}</span>
 			<span className={styles.attr}>rating: {movie.rating}</span>
 			<span className={styles.attr}>
@@ -38,9 +32,6 @@ function Detail() {
 			<br />
 			<br />
 			<div className={styles.div}>{movie.description_full}</div>
-			<Link to="/">
-				<button className={styles.btn}>Return</button>
-			</Link>
 		</div>
 	);
 }

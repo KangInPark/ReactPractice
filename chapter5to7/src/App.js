@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import Topbtn from "./components/Topbtn";
 import Detail from "./routes/Detail";
 import Home from "./routes/Home";
 
@@ -12,6 +12,7 @@ function App() {
 				<Route path="/movie/:id" element={<Detail />}></Route>
 				<Route path="/" element={<Home />}></Route>
 			</Routes>
+			<Topbtn/>
 		</Router>
 	);
 }

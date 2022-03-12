@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { AiOutlineReload } from "react-icons/ai";
 import styles from "./Loading.module.css";
 

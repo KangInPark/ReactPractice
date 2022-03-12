@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
-import Topbtn from "../components/Topbtn";
-import Loading from "../components/Loading";
 
 function Home() {
 	const [loading, setLoading] = useState(true);
@@ -35,7 +34,6 @@ function Home() {
 					))}
 				</div>
 			)}
-			<Topbtn />
 		</div>
 	);
 }
