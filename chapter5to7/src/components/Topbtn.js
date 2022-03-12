@@ -27,7 +27,7 @@ function Topbtn() {
 				width: "3vw",
 				height: "3vw",
 				borderRadius: "100%",
-				backgroundColor: "white",
+				backgroundColor: "white"
 			}}
 			onClick={onClick}
 		/>

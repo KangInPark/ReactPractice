@@ -1,26 +1,46 @@
-.attr, .div {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin: 5px;
-    background-color:dimgray;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 500px;
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	background-position: right;
+	background-repeat: no-repeat;
+    background-color:white;
+	background-size: cover;
+	min-height: 94vh;
+}
+.container > * {
+	color: white;
+	border-radius: 0.5rem;
+    padding: 1rem 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.items {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
 }
 
 .title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 4rem;
+	margin: 0;
 }
 
-.btn {
-    margin: 5px;
-    padding: 10px;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bolder;
+.attr {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid white;
+    border-radius: 0.9rem;
 }
 
-img {
-    display: block;
-    margin: 30px 5px;
+.div {
+    max-width: 50vw;
+    font-size: 1.5rem;
 }

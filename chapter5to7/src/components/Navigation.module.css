@@ -1,6 +1,8 @@
 .div {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	padding: 15px 30px;
+	padding: 15px 40px;
+    font-weight: bolder;
+    font-size: 2rem;
 }
 .div:hover{
     background-color: gold;
@@ -8,10 +10,7 @@
 .container {
     display: flex;
     align-items: center;
-    height: 3rem;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    height: 6vh;
 }
 .link, .link:hover{
     color:teal;

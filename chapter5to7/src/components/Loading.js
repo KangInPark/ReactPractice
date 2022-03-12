@@ -5,7 +5,7 @@ function Loading() {
 	return (
 		<div className={styles.container}>
 			<AiOutlineReload className={styles.load} />
-            <h1>Now Loading...</h1>
+            <h1 className={styles.h1}>Now Loading...</h1>
 		</div>
 	);
 }
