@@ -24,8 +24,8 @@ function Topbtn() {
 				position: "fixed",
 				bottom: "1rem",
 				right: "1.9rem",
-				width: "50px",
-				height: "50px",
+				width: "3vw",
+				height: "3vw",
 				borderRadius: "100%",
 				backgroundColor: "white",
 			}}

@@ -6,10 +6,10 @@ function Navigation() {
 	return (
 		<div className={styles.container}>
 			<Link to="/" className={styles.link}>
-				<span className={styles.span}>home</span>
+				<div className={styles.div}>home</div>
 			</Link>
 			<Link to="/about" className={styles.link}>
-				<span className={styles.span}>about</span>
+				<div className={styles.div}>about</div>
 			</Link>
 		</div>
 	);

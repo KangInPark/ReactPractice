@@ -1,18 +1,19 @@
-.span {
-    display: table-cell;
+.div {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	padding: 15px 30px;
 }
-.span:hover{
+.div:hover{
     background-color: gold;
 }
 .container {
-    display: table;
+    display: flex;
+    align-items: center;
     height: 3rem;
     font-weight: bolder;
-    margin: 5px 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
-.link:visited, .link, .link:hover{
+.link, .link:hover{
     color:teal;
     text-decoration: none;
 }

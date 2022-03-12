@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
 import Topbtn from "../components/Topbtn";
+import Loading from "../components/Loading";
 
 function Home() {
 	const [loading, setLoading] = useState(true);
@@ -18,8 +19,8 @@ function Home() {
 	useEffect(() => getMovies(), []);
 	return (
 		<div>
-			{loading ? (
-				<h1>Loading...</h1>
+			{ loading ? (
+				<Loading />
 			) : (
 				<div className={styles.container}>
 					{movies.map((movie) => (

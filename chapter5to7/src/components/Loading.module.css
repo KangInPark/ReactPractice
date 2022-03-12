@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3rem);
+}
+
+h1{
+    font-size: 4rem;
+    color: rgba(0,0,0,0.6);
+}
+
+.load{
+    width: 20vh;
+    height: 20vh;
+    color: rgba(0,0,0,0.6);
+    animation-name: rot;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rot {
+    50% {
+        transform: rotate(0.5turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
