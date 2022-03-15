@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	height: 60vh;
+	padding: 2rem;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.item {
+	font-size: 2rem;
+}
+
+.icon {
+	width: 5rem;
+	height: 5rem;
+}
+
+.title {
+	font-size: 4rem;
+}
